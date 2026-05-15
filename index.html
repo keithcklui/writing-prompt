@@ -4,9 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Daily Writing</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -19,8 +16,8 @@
       --accent: #c8873a;
       --accent-light: #f0e0c8;
       --rule: #e5e0d8;
-      --serif: 'Lora', Georgia, serif;
-      --sans: 'Inter', system-ui, sans-serif;
+      --serif: Georgia, 'Times New Roman', serif;
+      --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
     }
 
     body {
@@ -477,7 +474,7 @@
   }
   if (todaySaved()) {
     saveBtn.textContent = 'Update entry';
-    saveNote.textContent = 'You've already saved an entry today.';
+    saveNote.textContent = "You've already saved an entry today.";
   }
 
   writeArea.addEventListener('input', () => {
